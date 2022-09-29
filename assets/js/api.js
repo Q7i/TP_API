@@ -25,7 +25,7 @@ function clickEvent() {
                     response.json()
                         .then(
                             function (datas) {
-                                console.table(datas);
+                                console.table(datas);// on créer l'élement sur l'id qu'on appel dans le fichier html
                                 let blaguetab = document.getElementById("BlagueLine");
                                 blaguetab.appendChild(setHTML(datas));
                             })
